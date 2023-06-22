@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1F142321-D73E-480A-AEBF-2AB49F49A544}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{B677B42A-11C2-4587-869A-F933EDA28656}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataCollectors.OPCUA.Presentation.Api", "src\Presentation\Presentation.Api\DataCollectors.OPCUA.Presentation.Api.csproj", "{D19B7555-9139-46EC-BBA9-B9AEE44E9442}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{02D810D7-B23F-44B6-8CDD-524D7FC39440}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opc.Ua.Client", "src\Core\Core.Client\Opc.Ua.Client\Opc.Ua.Client.csproj", "{E022D948-E01B-4AC1-BF59-F5E7BA8B92FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opc.Ua.Client.ComplexTypes", "src\Core\Core.Client\Opc.Ua.Client.ComplexTypes\Opc.Ua.Client.ComplexTypes.csproj", "{6E852912-525F-4491-9520-8292B1F49143}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opc.Ua.Configuration", "src\Core\Core.Client\Opc.Ua.Configuration\Opc.Ua.Configuration.csproj", "{19563EB4-27D4-494D-AFC4-EA1F104139FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opc.Ua.Core", "src\Core\Core.Client\Opc.Ua.Core\Opc.Ua.Core.csproj", "{BFB8715A-A64F-4E31-B265-C74ED297C8DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opc.Ua.Security.Certificates", "src\Core\Core.Client\Opc.Ua.Security.Certificates\Opc.Ua.Security.Certificates.csproj", "{5873A7A9-BBB3-4A3E-8A7B-23C41E8F714D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".configuration", ".configuration", "{8210D9ED-B32D-40A5-B5F4-10CD3F197EC8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		README.md = README.md
+		rulesets\stylecop.ruleset = rulesets\stylecop.ruleset
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataCollectors.OPCUA.Core.Application", "src\Core\Core.Application\DataCollectors.OPCUA.Core.Application.csproj", "{B735A0A3-F038-4127-BA25-A439018E5615}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D19B7555-9139-46EC-BBA9-B9AEE44E9442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D19B7555-9139-46EC-BBA9-B9AEE44E9442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D19B7555-9139-46EC-BBA9-B9AEE44E9442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D19B7555-9139-46EC-BBA9-B9AEE44E9442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E022D948-E01B-4AC1-BF59-F5E7BA8B92FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E022D948-E01B-4AC1-BF59-F5E7BA8B92FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E022D948-E01B-4AC1-BF59-F5E7BA8B92FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E022D948-E01B-4AC1-BF59-F5E7BA8B92FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E852912-525F-4491-9520-8292B1F49143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E852912-525F-4491-9520-8292B1F49143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E852912-525F-4491-9520-8292B1F49143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E852912-525F-4491-9520-8292B1F49143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19563EB4-27D4-494D-AFC4-EA1F104139FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19563EB4-27D4-494D-AFC4-EA1F104139FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19563EB4-27D4-494D-AFC4-EA1F104139FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19563EB4-27D4-494D-AFC4-EA1F104139FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB8715A-A64F-4E31-B265-C74ED297C8DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB8715A-A64F-4E31-B265-C74ED297C8DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB8715A-A64F-4E31-B265-C74ED297C8DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB8715A-A64F-4E31-B265-C74ED297C8DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5873A7A9-BBB3-4A3E-8A7B-23C41E8F714D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5873A7A9-BBB3-4A3E-8A7B-23C41E8F714D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5873A7A9-BBB3-4A3E-8A7B-23C41E8F714D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5873A7A9-BBB3-4A3E-8A7B-23C41E8F714D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B735A0A3-F038-4127-BA25-A439018E5615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B735A0A3-F038-4127-BA25-A439018E5615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B735A0A3-F038-4127-BA25-A439018E5615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B735A0A3-F038-4127-BA25-A439018E5615}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D19B7555-9139-46EC-BBA9-B9AEE44E9442} = {B677B42A-11C2-4587-869A-F933EDA28656}
+		{02D810D7-B23F-44B6-8CDD-524D7FC39440} = {1F142321-D73E-480A-AEBF-2AB49F49A544}
+		{E022D948-E01B-4AC1-BF59-F5E7BA8B92FD} = {02D810D7-B23F-44B6-8CDD-524D7FC39440}
+		{6E852912-525F-4491-9520-8292B1F49143} = {02D810D7-B23F-44B6-8CDD-524D7FC39440}
+		{19563EB4-27D4-494D-AFC4-EA1F104139FC} = {02D810D7-B23F-44B6-8CDD-524D7FC39440}
+		{BFB8715A-A64F-4E31-B265-C74ED297C8DD} = {02D810D7-B23F-44B6-8CDD-524D7FC39440}
+		{5873A7A9-BBB3-4A3E-8A7B-23C41E8F714D} = {02D810D7-B23F-44B6-8CDD-524D7FC39440}
+		{B735A0A3-F038-4127-BA25-A439018E5615} = {1F142321-D73E-480A-AEBF-2AB49F49A544}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0ECF5B56-E21E-4EEE-ADF1-066BBE0BBFEE}
+	EndGlobalSection
+EndGlobal

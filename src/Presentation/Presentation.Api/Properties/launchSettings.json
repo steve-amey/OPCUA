@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "DataCollectors.OPCUA.Presentation.Api": {
+      "commandName": "Project",
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7166"
+    }
+  }
+}
