@@ -2,7 +2,6 @@ using DataCollectors.OPCUA.Core.Application;
 using DataCollectors.OPCUA.Core.Application.Shared.Options;
 using DataCollectors.OPCUA.Presentation.Api.Configuration.Options;
 using Microsoft.AspNetCore.HttpLogging;
-using Microsoft.AspNetCore.Server.HttpSys;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,17 +9,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder
     .Host
     .ConfigureSerilog();
-
-builder
-    .WebHost
-    .UseHttpSys(options =>
-    {
-        options.AllowSynchronousIO = false;
-        options.Authentication.Schemes = AuthenticationSchemes.None;
-        options.Authentication.AllowAnonymous = true;
-        options.MaxConnections = null;
-        options.MaxRequestBodySize = 30000000;
-    });
 
 builder
     .Services
