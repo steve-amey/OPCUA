@@ -3899,11 +3899,18 @@ namespace Opc.Ua.Client
 
             if (args != null)
             {
-                for (int ii = 0; ii < args.Length; ii++)
+                for (int ii = 0; ii < ((List<Variant>)args[0]).Count; ii++)
                 {
-                    inputArguments.Add(new Variant(args[ii]));
+                    inputArguments.Add(new Variant(((List<Variant>)args[0])[ii]));
                 }
             }
+
+            //if (args != null)
+            //{
+
+            //    inputArguments.Add(new Variant(args[0]));
+            //    inputArguments.Add(new Variant(args[1]));
+            //}
 
             CallMethodRequest request = new CallMethodRequest();
 
